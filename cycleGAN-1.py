@@ -154,7 +154,7 @@ discriminator_y_optimizer = tf.keras.optimizers.Adam(2e-4, beta_1=0.5)
 
 
 #Checkpoint
-checkpoint_path = "./checkpoints/train"
+'''checkpoint_path = "./checkpoints/train"
 
 ckpt = tf.train.Checkpoint(generator_g=generator_g,
                            generator_f=generator_f,
@@ -170,7 +170,7 @@ ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=5)
 # if a checkpoint exists, restore the latest checkpoint.
 if ckpt_manager.latest_checkpoint:
   ckpt.restore(ckpt_manager.latest_checkpoint)
-  print ('Latest checkpoint restored!!')
+  print ('Latest checkpoint restored!!')'''
 
 
 EPOCHS = 40
